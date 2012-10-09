@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ .page.title }} &middot; drone.io</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/drone-base.css" rel="stylesheet" />
+		<link href="css/drone-docs.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Primary Navigation
+		================================================== -->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="https://drone.io"></a>
+					<ul class="nav pull-right" style>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="tos.html">Terms of Service</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="container-inner">
+				<!-- Project Details
+				================================================== -->
+				<header>
+					<hgroup>
+						<h1>{{ .page.title }}</h1>
+					</hgroup>
+				</header>
+
+				<hr/>
+
+				<!-- Project Settings
+				================================================== -->
+				<div class="container-fluid container-docs container-legal">
+					<!-- Settings Options -->
+					<div>
+
+						<article>
+							{{ .content }}
+						</article>
+					</div>
+
+				</div><!-- end .container-fluid -->
+			</div><!-- end .inner -->
+		</div>
+
+		<!-- Footer
+		================================================== -->
+		<footer>
+			<ul>
+				<li><a href="https://drone.io/pricing">Plans and Pricing</a></li>
+				<!--<li><a href="https://drone.io/features">Features</a></li>-->
+				<li><a href="http://blog.drone.io">Blog</a></li>
+				<li><a href="http://docs.drone.io/contact.html">Contact</a></li>
+				<li><a href="http://docs.drone.io">Documentation</a></li>
+				<li><a href="http://docs.drone.io/privacy.html">Privacy Policy</a></li>
+				<li><a href="http://docs.drone.io/tos.html">Terms of Service</a></li>
+			</ul>
+			<p class="copyright">&copy; 2012 <strong>Drone.io</strong> All Rights Reserved.</p>
+		</footer>
+
+		<!-- Analytics
+		================================================== -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-34247933-1']);
+			_gaq.push(['_setDomainName', 'drone.io']);
+				_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>

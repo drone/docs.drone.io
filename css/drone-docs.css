@@ -1,0 +1,233 @@
+/* Docs Scaffolding */
+
+.container-docs {
+	margin:0px;
+	padding:0px;
+	margin-top:20px;
+	font-size: 14px;
+}
+
+.container-docs .span3 {
+	margin-left:0px;
+	padding-left:0px;
+	padding-bottom:30px;
+}
+
+.container-docs .span9 {
+	margin:0px;
+	padding:0px;
+	padding-top:5px;
+	padding-left:0px
+}
+
+.container-docs .span9.pull-right {
+	float:right;
+}
+
+.container-docs hr {
+	margin-top:35px;
+}
+
+h1 img {
+	border:none !IMPORTANT;
+	text-shadow:none !IMPORTANT;
+	box-shadow:none !IMPORTANT;
+	max-height:65px;
+	padding:0px !IMPORTANT;
+}
+
+.container-legal {
+	font-size: 13px;
+	text-align:justify;
+}
+
+/* Blog Navigation */
+
+.container-docs .nav.nav-pills.nav-stacked li {
+	
+	color:#7D7D7B;
+	font-size:12px;
+	padding-top:0px;
+	padding-bottom:0px; 
+}
+.container-docs .nav.nav-pills.nav-stacked li > a {
+	font-size: 14px;
+	color:#08C;
+	padding-bottom:0px;
+}
+.container-docs .nav.nav-pills.nav-stacked li > a:hover {
+	font-size: 14px;
+	color:#005580;
+	background-color:#FFF;
+	text-decoration: underline;
+}
+
+.nav.nav-pills.nav-stacked li.nav-header {
+	color:#7D7D7B;
+	font-size:13px;
+	margin-top:20px;
+	padding-left:0px;
+}
+
+/* Standard Page Elements */
+
+article {
+	padding-bottom:30px;
+	margin-bottom:30px;
+	border-bottom:1px solid #E4E4E4;
+}
+
+article:last-child {
+	border-bottom:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+cite {
+	color: #B0B0AD;
+	line-height: 30px;
+}
+
+cite a {
+	color: #7D7D7B;
+}
+
+h1 {
+	font-size:33px;
+	font-weight:normal;
+	color:#353535;
+}
+
+h2 {
+	font-size:22px;
+	font-weight:normal;
+	color:#353535;
+	margin-top:25px;
+}
+
+h3 {
+	font-size:19px;
+	font-weight:normal;
+	color:#353535;
+	margin-top:20px;
+}
+
+h4 {
+	font-size:16px;
+	font-weight:normal;
+	color:#353535;
+}
+
+p {
+	color:#5A5A5A;#7D7D7B;
+	padding-top:10px;
+}
+
+ul {
+	margin-top:10px;
+	margin-bottom:10px;
+	color#5A5A5A;#7D7D7B;
+}
+
+img {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px;
+	background: white;
+	-webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 12px rgba(0,0,0,0.4);
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+	margin:10px 0px;
+}
+
+pre {
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+	color:#000;
+	margin-top:15px;
+	margin-bottom:10px;
+}
+
+/* Table Element, uses Bootstrap's .table as default style */
+
+table {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+table th {
+  font-weight: bold;
+}
+table thead th {
+  vertical-align: bottom;
+}
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+table caption + thead tr:first-child th,
+table caption + tbody tr:first-child th,
+table caption + tbody tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + tbody tr:first-child th,
+table colgroup + tbody tr:first-child td,
+table thead:first-child tr:first-child th,
+table tbody:first-child tr:first-child th,
+table tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+table thead:first-child tr:first-child th:first-child,
+table tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+table thead:first-child tr:first-child th:last-child,
+table tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+table thead:last-child tr:last-child th:first-child,
+table tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+table thead:last-child tr:last-child th:last-child,
+table tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+table tbody tr:nth-child(odd) td,
+table tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}

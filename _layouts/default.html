@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ .page.title }} &middot; drone.io</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/drone-base.css" rel="stylesheet" />
+		<link href="css/drone-docs.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="pictonic/css/pictonic.css">
+		<!--[if lt IE 9]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Primary Navigation
+		================================================== -->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="https://drone.io"></a>
+					<ul class="nav pull-right">
+						<li><a href="http://blog.drone.io">Blog</a></li>
+						<li class="active"><a href="http://docs.drone.io">Documentation</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="container-inner">
+				<!-- Project Details
+				================================================== -->
+				<header>
+					<hgroup>
+						{{ if .page.logo }}
+						<h1><img src="{{ .page.logo }}"/></h1>
+						{{ else }}
+							{{ if .page.icon }}
+							<h1><span class="icon-prog-{{ .page.icon }}" style="font-size:40px;"></span> <span style="font-size:30px;">{{ .page.tagline }}</span></h1>
+							{{ else }}
+								<h1>{{ .page.title }}</h1>
+							{{ end }}
+						{{ end }}
+					</hgroup>
+				</header>
+
+				<hr/>
+
+				<!-- Project Settings
+				================================================== -->
+				<div class="container-fluid container-docs">
+					<!-- Settings Options -->
+					<div class="span9">
+
+						<article>
+							{{ .content }}
+						</article>
+					</div>
+
+					<!-- Settings Form -->
+					<div class="span3 pull-right">
+
+						<ul class="nav nav-pills nav-stacked">
+							<li class="nav-header">Getting Started</li>
+							<li><a href="/quickstart.html">Quick Start Guide</a></li>
+							<li><a href="/createaccount.html">Create Account</a></li>
+							<li><a href="/newproject.html">Project & Repo Setup</a></li>
+							
+							<li class="nav-header">Builds</li>
+							<li><a href="/buildscript.html">Configuration</a></li>
+							<li><a href="/notifications.html">Notifications</a></li>
+							<li><a href="/artifacts.html">Artifacts</a></li>
+							<li><a href="/triggers.html">Triggering Builds</a></li>
+
+							<li class="nav-header">Languages</li>
+							<li><a href="/c.html">C</a></li>
+							<li><a href="/cpp.html">C++</a></li>
+							<li><a href="/dart.html">Dart</a></li>
+							<li><a href="/golang.html">Go</a></li>
+							<li><a href="/java.html">Java</a></li>
+							<li><a href="/node.html">Node.js</a></li>
+							<li><a href="/python.html">Python (Beta)</a></li>
+							<li><a href="/ruby.html">Ruby (Beta)</a></li>
+						
+							<li class="nav-header">Deployments</li>
+							<li><a href="/heroku.html">Heroku</a></li>
+							<li><a href="/dotcloud.html">Dotcloud</a></li>
+							
+							<li class="nav-header">Repository Setup</li>
+							<li><a href="/github.html">Github</a></li>
+							<li><a href="/bitbucket.html">Bitbucket</a></li>
+<!--	
+							<li class="nav-header">Addons</li>
+							<li><a href="#">MySQL</a></li>
+							<li><a href="#">PostgreSQL</a></li>
+							<li><a href="#">Redis</a></li>
+							<li><a href="#">Memcache</a></li>
+-->
+						</ul>
+					</div><!-- end .span3-->
+				</div><!-- end .container-fluid -->
+			</div><!-- end .inner -->
+		</div>
+
+		<!-- Footer
+		================================================== -->
+		<footer>
+			<ul>
+				<li><a href="https://drone.io/pricing">Plans and Pricing</a></li>
+			<!--	<li><a href="https://drone.io/features">Features</a></li> -->
+				<li><a href="http://blog.drone.io">Blog</a></li>
+				<li><a href="http://docs.drone.io/contact.html">Contact</a></li>
+				<li><a href="http://docs.drone.io">Documentation</a></li>
+				<li><a href="http://docs.drone.io/privacy.html">Privacy Policy</a></li>
+				<li><a href="http://docs.drone.io/tos.html">Terms of Service</a></li>
+			</ul>
+			<p class="copyright">&copy; 2012 <strong>Drone.io</strong> All Rights Reserved.</p>
+		</footer>
+
+		<!-- Analytics
+		================================================== -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-34247933-1']);
+			_gaq.push(['_setDomainName', 'drone.io']);
+				_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+		<!-- User Voice
+		================================================== -->
+		<script type="text/javascript">
+		  var uvOptions = {};
+		  (function() {
+			var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+			uv.src = 'uservoice-mod.js' //('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/OIFj0Cos030oQssN7wpvWw.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+		  })();
+		</script>
+	</body>
+</html>
