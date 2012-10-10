@@ -11,3 +11,10 @@ separated with newlines:
 ![Notifications](img/screenshot_artifacts.png)
 
 **IMPORTANT:** these paths should be *relative to* your source repository's root directory.
+
+Examples:
+
+* `bin/myproject.zip` will archive the file `/home/ubuntu/src/bin/myproject.zip`
+* `bin/*.zip` will archive all zip files in `/home/ubuntu/src/bin/`
+
+Build artifacts can be downloaded from **project** > **downloads**
