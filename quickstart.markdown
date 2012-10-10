@@ -6,7 +6,7 @@ title: Quick Start Guide
 This guide will walk you through the minimum steps to build a project with Drone.io.  
 
 * It assumes you'll be using a Free account and creating a Public project.  
-* It also assumes you have a source code repository that you can use.  If you don't have a repo then you can always fork one of Drone.io's open source projects, like [routes.go](https://github.com/drone/routes) or [go.stripe](https://github.com/drone/go.stripe).
+* It also assumes you have a source code repository you can use.  If you don't have a repo, then you can always fork one of Drone.io's open source projects, like [routes.go](https://github.com/drone/routes) or [go.stripe](https://github.com/drone/go.stripe).
 
 ### Sign In (or Create Account)
 
@@ -109,7 +109,7 @@ For any issue or concern please [contact](/contact.html) us.
 
 ### Extra Credit
 
-Add a build status image to your project's website or repo's readme. Check out this <a href="https://github.com/drone/routes#readme" target="_blank">example</a>.
+Add a build status image to your project's website or repo's readme. Check out this <a href="https://github.com/drone/routes#readme" target="_blank">example</a>.  The image link for your project is at **projects** > **settings** > **general**
 
 Follow [droneio@twitter](https://twitter.com/droneio) for news and updates.
 
