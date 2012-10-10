@@ -20,10 +20,14 @@ Read through the guides below to get started.  Also take a look at our [Frequent
 * [Notifications](/notifications.html)
 
 ## Language Specific Build Setup
+* [C](/c.html)
+* [C++](/cpp.html)
 * [Dart](/dart.html)
 * [Go](/golang.html)
 * [Java](/java.html)
-* [Python](/python.html)
+* [Node.js](/node.html)
+* [Python (Beta)](/python.html)
+* [Ruby (Beta)](/ruby.html)
 
 ## Repository Setup
 * [Github](/github.html)
