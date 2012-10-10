@@ -9,7 +9,7 @@ This document covers Continuous Deployment to Heroku using [drone.io](http://dro
 This document assumes:
 
 * You are registered for a Heroku account
-* You installed the [Heroku Tookbelt](https://toolbelt.heroku.com) on your computer
+* You installed the [Heroku Toolbelt](https://toolbelt.heroku.com) on your computer
 * You have created an application using `heroku create`
 
 ## Register SSH Key
