@@ -28,6 +28,7 @@ Read through the guides below to get started.  Also take a look at our [Frequent
 * [Node.js](/node.html)
 * [Python (Beta)](/python.html)
 * [Ruby (Beta)](/ruby.html)
+* [Scala (Beta)](/scala.html)
 
 ## Repository Setup
 * [Github](/github.html)
