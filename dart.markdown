@@ -42,4 +42,5 @@ tests/run.sh
 
 Real-world Dart projects using [drone.io](https://drone.io):
 
+* [dart-lang/pop-pop-win](https://github.com/dart-lang/pop-pop-win)
 * [kevmoo/bot.dart](https://drone.io/kevmoo/bot.dart/script/config)
