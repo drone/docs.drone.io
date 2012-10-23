@@ -26,6 +26,7 @@ Read through the guides below to get started.  Also take a look at our [Frequent
 * [Go](/golang.html)
 * [Java](/java.html)
 * [Node.js](/node.html)
+* [PHP (Beta)](/php.html)
 * [Python (Beta)](/python.html)
 * [Ruby (Beta)](/ruby.html)
 * [Scala (Beta)](/scala.html)
