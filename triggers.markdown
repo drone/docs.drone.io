@@ -38,6 +38,6 @@ Builds hooks are sometimes called "Service Hooks" or simply "Services", and sett
 Here are detailed guides for setting up a Drone.io build hook on popular hosts:
 
 * [Github](/github.html#hooks)
-* [Bitbucket](/bitbucker.html#hooks)
+* [Bitbucket](/bitbucket.html#hooks)
 
 
