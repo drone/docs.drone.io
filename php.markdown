@@ -76,11 +76,8 @@ Example using **composer**:
 composer install
 ```
 
-Example using **pyrus**
-
-```
-pyrus install packagename
-```
+**TODO:** pyrus is not yet installed. If you would like support for pyrus / pear2
+please let us know.
 
 ## Unit Test
 
