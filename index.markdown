@@ -29,6 +29,7 @@ Read through the guides below to get started.  Also take a look at our [Frequent
 * [PHP (Beta)](/php.html)
 * [Python (Beta)](/python.html)
 * [Ruby (Beta)](/ruby.html)
+* [Rust (Beta)](/rust.html)
 * [Scala (Beta)](/scala.html)
 
 ## Repository Setup
