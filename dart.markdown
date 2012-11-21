@@ -5,7 +5,7 @@ title: Dart
 
 The following Dart versions are available to your build:
 
-* Dart SDK
+* Dart SDK (Integration)
 * Dart SDK (Continuous / Nightly)
 
 The DART_SDK environment variable is available and included in the PATH:
@@ -20,8 +20,7 @@ The following Dart command line tools are available:
 * Dart VM (dart)
 * Dart package manager (pub)
 
-
-### Dependencies
+## Dependencies
 
 The Dart SDK includes a package management utility called [Pub](http://www.dartlang.org/docs/pub-package-manager/).
 Executing **pub install** will download all dependencies defined in the **pubspec.yaml** file.
@@ -29,6 +28,25 @@ Executing **pub install** will download all dependencies defined in the **pubspe
 ```
 pub install
 ```
+
+## Testing
+
+At this time, Dart does not have a standard build management tool (ie maven).
+So you will probably need to modify the default build script to ensure your
+tests are executed correctly.
+
+## Headless Browser Tests
+
+A headless verion of webkit, **DumpRenderTree**, it also available for testing
+your client-side code. To use DumpRenderTree you will need to start **xvfb** (a virtual xwindows system)
+in your build script:
+
+```
+sudo start xvfb
+```
+
+For an example project using DumpRenderTree, see the Dart team's
+[dart-web-components](https://github.com/dart-lang/dart-web-components) project.
 
 ## Examples
 
