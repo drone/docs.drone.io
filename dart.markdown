@@ -5,7 +5,7 @@ title: Dart
 
 The following Dart versions are available to your build:
 
-* Dart SDK
+* Dart SDK (Integration)
 * Dart SDK (Continuous / Nightly)
 
 The DART_SDK environment variable is available and included in the PATH:
