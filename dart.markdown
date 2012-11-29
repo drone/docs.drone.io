@@ -5,8 +5,9 @@ title: Dart
 
 The following Dart versions are available to your build:
 
-* Dart SDK (Integration)
-* Dart SDK (Continuous / Nightly)
+* Dart integration (from https://gsdview.appspot.com/dart-editor-archive-integration)
+* Dart bleeding_edge (from https://gsdview.appspot.com/dart-editor-archive-continuous)
+* Dart trunk (from https://gsdview.appspot.com/dart-editor-archive-trunk)
 
 The DART_SDK environment variable is available and included in the PATH:
 
@@ -19,6 +20,7 @@ The following Dart command line tools are available:
 * Dart-to-JavaScript compiler (dart2js)
 * Dart VM (dart)
 * Dart package manager (pub)
+* Dart Analyzer (dart_analyzer)
 
 ## Dependencies
 
@@ -34,6 +36,8 @@ pub install
 At this time, Dart does not have a standard build management tool (ie maven).
 So you will probably need to modify the default build script to ensure your
 tests are executed correctly.
+
+For further instruction, please see the build Script [documentation](/buildscript.html).
 
 ## Headless Browser Tests
 
@@ -61,4 +65,5 @@ tests/run.sh
 Real-world Dart projects using [drone.io](https://drone.io):
 
 * [dart-lang/pop-pop-win](https://github.com/dart-lang/pop-pop-win)
+* [dart-lang/dart-web-components](https://github.com/dart-lang/dart-web-components)
 * [kevmoo/bot.dart](https://drone.io/kevmoo/bot.dart/script/config)
