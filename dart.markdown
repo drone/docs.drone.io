@@ -5,8 +5,9 @@ title: Dart
 
 The following Dart versions are available to your build:
 
-* Dart SDK (Integration)
-* Dart SDK (Continuous / Nightly)
+* Dart integration (from https://gsdview.appspot.com/dart-editor-archive-integration)
+* Dart bleeding_edge (from https://gsdview.appspot.com/dart-editor-archive-continuous)
+* Dart trunk (from https://gsdview.appspot.com/dart-editor-archive-trunk)
 
 The DART_SDK environment variable is available and included in the PATH:
 
@@ -19,6 +20,7 @@ The following Dart command line tools are available:
 * Dart-to-JavaScript compiler (dart2js)
 * Dart VM (dart)
 * Dart package manager (pub)
+* Dart Analyzer (dart_analyzer)
 
 ## Dependencies
 
