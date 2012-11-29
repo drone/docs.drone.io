@@ -31,6 +31,13 @@ Take a look at the "Commands" section.  These commands should be the same ones y
 
 Some example build commands for projects with standard setups:
 
+Builds Commands ([Dart](/dart.html)):
+
+```
+pub install
+test/run.sh
+```
+
 Builds Commands ([Java](/java.html)):
 
 ```

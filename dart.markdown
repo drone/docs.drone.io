@@ -35,6 +35,8 @@ At this time, Dart does not have a standard build management tool (ie maven).
 So you will probably need to modify the default build script to ensure your
 tests are executed correctly.
 
+For further instruction, please see the build Script [documentation](/buildscript.html).
+
 ## Headless Browser Tests
 
 A headless verion of webkit, **DumpRenderTree**, it also available for testing
@@ -61,4 +63,5 @@ tests/run.sh
 Real-world Dart projects using [drone.io](https://drone.io):
 
 * [dart-lang/pop-pop-win](https://github.com/dart-lang/pop-pop-win)
+* [dart-lang/dart-web-components](https://github.com/dart-lang/dart-web-components)
 * [kevmoo/bot.dart](https://drone.io/kevmoo/bot.dart/script/config)
