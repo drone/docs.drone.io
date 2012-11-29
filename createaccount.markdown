@@ -55,7 +55,9 @@ The very specific permissions and data Drone.io reqeusts are highlighted below.
 Github
 </td>
 <td>
-<ul><li>Read your public information</li></ul>
+<ul><li>Read your public information</li>
+<li>Update your public and private repositories (Commits, Issues, etc).</li>
+</ul>
 <td>
 </tr>
 <tr>
@@ -66,6 +68,7 @@ Google
 <ul><li>View basic information about your account</li>
 <li>View your email address</li>
 <li>Perform these operations when I'm not using the application</li>
+</ul>
 </td>
 </tr>
 </table>
