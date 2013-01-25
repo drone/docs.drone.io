@@ -5,29 +5,25 @@ title: Quick Start Guide
 
 This guide will walk you through the minimum steps to build a project with Drone.io.  
 
-* It assumes you'll be using a Free account and creating a Public project.  
+* It assumes you'll be using a Free account and creating a Public project.
 * It also assumes you have a source code repository you can use.  If you don't have a repo, then you can always fork one of Drone.io's open source projects, like [routes.go](https://github.com/drone/routes) or [go.stripe](https://github.com/drone/go.stripe).
 
 ### Sign In (or Create Account)
 
-You'll need to be signed in with your Drone.io account.  Select "Sign In" or "Create Account".
+You'll need to be signed in with your Drone.io account.  Select "Login" or "Sign up."
 ![Create Account](img/quickstart-account.png)
 
 ### Create Project
 
-Create a project by selecting "New Project", then chose a language and repository type.
+Create a project by selecting "New Project" then pick the site your repo is on.
 ![Sign-In](img/new-project.png)
 
-Fill in the project name and provide the repository's public URL.
-![New Project](img/quickstart-newproject.png)
-
-It should look like the above screenshot.  Click "Create" when you're done.
+Select your repo from the list.
+![List](img/repo-list.png)
 
 ### Build Settings
 
-You should end up on the build script settings page after creating the project.  If you're not there, then navigate to **dashboard** > **project** > **settings** > **build**
-
-Take a look at the "Commands" section.  These commands should be the same ones you would use to build your project locally (ie on your laptop).  If the default commands are wrong, modify them and save.
+Select your language then confirm your build script.  These commands should be the same ones you would use to build your project locally (ie on your laptop).  If the default commands are wrong, modify them and save.
 
 Some example build commands for projects with standard setups:
 
@@ -60,20 +56,22 @@ go build
 go test -v
 ```
 
-Once you think the commands are good, hit "Build Now."
+### Build Now
+
+Your project is now setup to automatically build when your source code changes.  You can also manually trigger a build whenever you want.  This is very useful for debugging build issues or for trying out new features.
+
+Just hit "Build Now."
 ![Manual Build Now](img/trigger-now.png)
 
-You should get a message that your build request was received.  Wait a few moments (or longer if you know your code takes a while to compile/test), then check to see what the build output.
+You should get redirected to your build's realtime output.
 
-View the build output by going to **builds** and selecting the individual build from the list.
+View any of you build's output by going to **History** and selecting the individual build from the list.
 
 There's a chance it fails the first time, but that's OK, it's easy to try again.
 
 Main reasons a build fails:
 
-* Not able to copy/clone the source code
- * Verify the repo URL is correct, and is a public one.  You can view and update repo details at any time under **project** > **settings** > **repository**
-* Wrong commands
+* Incorrect build commands
  * When you first create a project a few default commands are added.  If your project doesn't use these commands, delete them and use the ones you would use when compiling/testing on your local computer.
 * Wrong directory
  * Look the "working directory" that's listed.  If your build commands expect something different, you can either add some "cd" commands, or update the repo details to use a different path.
@@ -81,17 +79,6 @@ Main reasons a build fails:
  * You can try to "wget" or "sudo apt-get install" whatever you need.  Just add the commands towards the beginning of your script.  If this doesn't work, or the dependency takes a long time to download and install,  [contact](/contact.html) us and it will get added to the virtual build machine image.
  
 At this point you should have been able to kickoff a build and review the output.  If you are not sure what your project's build commands should be, or are getting errors, check out the language-specific guides located on the upper right of this page.  
-
-### Triggering Builds
-
-You can always manually trigger a build by hitting your project's "Build Now" button.
-
-Builds can also be triggered by invoking your project's build hook URL.  This is how most people achieve continuous integration...your repository host can signal Drone.io to start a build every time a new commit is made.
-
-Your project's build URL is available at: **project** > **settings** > **general**
-![Manual Build Curl](img/trigger-curl.png)
-
-Update your repository host to make an HTTP POST to this URL whenever you want a build triggered.  If you've never setup a build hook (aka "service hook") with your repo, then read [Triggering Builds](/triggers.html#hook).
 
 ### The End
 
@@ -116,7 +103,11 @@ For any issue or concern please [contact](/contact.html) us.
 
 ### Extra Credit
 
-Add a build status image to your project's website or repo's readme. Check out this <a href="https://github.com/drone/routes#readme" target="_blank">example</a>.  The image link for your project is at **projects** > **settings** > **general**
+Add a build status image to your project's website or repo's readme. Check out an <a href="https://github.com/drone/routes#readme" target="_blank">example</a>.  
+
+The image link for your project is at **settings** > **status badges**.
+
+![Badge](img/badge-info.png)
 
 Follow [droneio@twitter](https://twitter.com/droneio) for news and updates.
 
