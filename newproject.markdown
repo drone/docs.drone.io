@@ -42,7 +42,8 @@ Read more about what options you have during your [build](/buildscript.html).
 
 ## Build Status Badge
 
-Now you can add a dynamic build status badge to your homepage.  Just update your projects Readme.md file or place a link of your website.
+Now you can add a dynamic build status badge to your homepage.  Check out an <a href="https://github.com/drone/routes#readme" target="_blank">example</a>.  
+Just update your repo's Readme.md file or place a link on your website.
 
 ![Badge](img/badge-info.png)
 
