@@ -1,62 +1,48 @@
 ---
 layout: default
-title: Create Project & Add Repository
+title: New Project
 ---
 
-This document will explain how to create a new project, and how to hook it up to one of your code repositories. 
+This document will explain how to create a new project that automatically builds when your source code is changed. 
 
 It assumes:
 
 * You have created a Drone.io account
-* Your source code is in a version control system
-* Your repository is hosted and available over the internet.  For example, you could be using GitHub, Bitbucket, Google Code, etc. 
+* You've linked your GitHub or Bitbucket account
 
+## Add a Project
 
-## Create a Project
-
-
-### Add a Project
-Click the "New Project" button, it's located in the upper right.
+Click the "New" button located in the upper right.
 
 ![Sign-In](img/new-project.png)
 
-Next you need to select the main programming language of your project, and the type of version control system you repository uses. 
-Currently the following repository types are supported:
+Pick where your source code is hosted.
 
-* Git (git)
-* Mercurial (hg)
-* Bazaar (bzr)
-* Subversion (svn)
+![Host](img/repo-pick.png)
 
-### Provide Repository Details
+Select your repository from the list.  Public projects are free.  Private projects require you to upgrade your billing plan.
 
-You will need to enter a name for your project, provide the url of your repository, and decide what level of access to give other users.
+![List](img/repo-list.png)
 
-![Sign-In](img/new-repo.png)
+You'll now be asked to select the main programming language for your project.
 
-The repository url is the most critical field.  The url will be different depending on the type of version control system and where it's hosted.  Here are some common examples:
-<table>
-<tr><th>Repo Type</th><th>Host</th><th>Valid Url</th></tr>
-<tr><td>Git (git)</td><td>Github</td><td>git://github.com/bradrydzewski/routes.go.git</td></tr>
-<tr><td>Git (git)</td><td>Bitbucket</td><td>git@bitbucket.org:bradrydzewski/ipython.git</td></tr>
-<tr><td>Bazaar</td><td>Self hosted on EC2</td><td>bzr+ssh://ubuntu@ec2-50-19-200-219.compute-1.amazonaws.com/~/src/node-demo</td></tr>
-</table>
+![Lang](img/lang-list.png)
 
-To finish creating the project, click "Create."
+The last step is to double check the build commands.  You will see a list of common build and test commands based on the language you choose.  If they look correct for your project, hit "Save" and your done.  
 
-### Enable Drone.io to Access to your Repository 
+![Script](img/review-script.png)
 
-If your repository is publicly available, then you're all set to start building and can skip the rest of this guide.  Read more about [configuring](/buildscript.html) and [triggering builds](/triggers.html).
+These build commands can be anything you enter on the command line.  Once you are done making changes, hit "Save."  Send an email to support@drone.io if your not sure how to build your project and we'll help you out.
 
-If your repository is private, then you will need to update your repository host to allow Drone.io to checkout your code.  This is done by adding your Drone.io project's SSH key to your host's list of allowed keys.
+## Finished
 
-A Drone.io project's SSH key is located under **project** > **settings** > **keys**
+Congrats! Your project is setup, and a build hook was automatically added to your repo.  Any new changes to your source code will trigger a build.
 
-![Deployment Key](img/deploy-key.png)
+Read more about what options you have during your [build](/buildscript.html).
 
-Here are the instructions for adding your project's drone.io key to some common hosts:
+## Build Status Badge
 
-* [Github](/github.html#keys)
-* [Bitbucket](/bitbucket.html#keys)
+Now you can add a dynamic build status badge to your homepage.  Just update your projects Readme.md file or place a link of your website.
 
-After you adding the key you should be all set to start building.  Read more about [configuring](/buildscript.html) and [triggering builds](/triggers.html).
+![Badge](img/badge-info.png)
+
