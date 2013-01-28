@@ -52,6 +52,16 @@ sudo start xvfb
 For an example project using DumpRenderTree, see the Dart team's
 [dart-web-components](https://github.com/dart-lang/dart-web-components) project.
 
+## Handling Dart Releases
+
+The Dart team releases a new version of the SDK about once every week.
+Drone offers a feature called **Triggers** to proactively build and test your
+project every time a new version of the dart-sdk is released.
+
+To enable this Trigger, go to your Project **Settings > Triggers**:
+
+![Proactive Dart Builds](img/screenshot_triggers_dart.png)
+
 ## Examples
 
 Example build script for the [html5lib](https://github.com/dart-lang/html5lib)
@@ -59,11 +69,11 @@ project maintained by Google's [Dart team](https://github.com/dart-lang):
 
 ```
 pub install
-tests/run.sh
+test/run.sh
 ```
 
 Real-world Dart projects using [drone.io](https://drone.io):
 
 * [dart-lang/pop-pop-win](https://github.com/dart-lang/pop-pop-win)
-* [dart-lang/dart-web-components](https://github.com/dart-lang/dart-web-components)
+* [dart-lang/web-ui](https://github.com/dart-lang/web-ui)
 * [kevmoo/bot.dart](https://drone.io/kevmoo/bot.dart/script/config)
