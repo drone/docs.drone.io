@@ -5,47 +5,36 @@ title: Create Account / Sign In
 
 This document will explain how to create an account on Drone.io, and how to sign into the system. 
 
-It assumes:
-
-* You are a new to Drone.io
-* You have a Github or Google account
-
 ## Creating an Account 
 
-Drone.io lets you sign in using either your Github or Google account.  Just click on "Create Account" button and choose either Github or Google.
+You have two options:
+
+* Use your existing GitHub, Bitbucket or Google account. This option means you will not need to enter a username and password on Drone.io.  Instead Drone.io will ask GitHub, Bitbucket or Google to verify your identity.
+* Create a custom Drone.io account. This option means you'll need to enter a username and password each time you sign into Drone.io.
+ 
+Create an account by clicking the "Sign up" button in the upper right and choosing an option.
 
 ![Sign-In](img/sign-in.png)
 
-Github or Google will then ask you to authorize Drone.io to have read-only access to your basic account information.  You must authorize/allow in order to use Drone.io (you can read more about this here).
+If you choose to use an existing account from GitHub, Google or Bitbucket, then you'll be redirected to their site and asked to authorize Drone.io.  This authorization is used by Drone.io to verify who you are and to help automate setting up projects.
 
-The final step to create an account is confirming your details and clicking "Register" button.
+After authorizing, you'll need to confirm your username, display name and email address.
 
-![Register](img/register.png)
+![Register](img/register-new.png)
 
 ## Sign-in
 
-If you are signed into Github or Google, then you should be automatically signed into Drone.io.  Drone.io never asks you for a username or password.
-
-If you end up at the Drone.io sign in screen, click the Github or Google button, and enter your login information like you normally would for those sites.  Note: You will need to rememeber which account you used when you first joined Drone.io.
-
-When you successfully sign in you should see your project dashboard.
-
-![Register](img/register-success.png)
-
-You have now created an account and signed in!
-
-
-
-
+If you are signed into Github or Google, then you should be automatically signed into Drone.io.  If not, you'll be redirected to their site and asked to sign-in first.
 
 ***
 
 ## Details about using Google and Github to sign in
 
-Drone.io leverages login services provided by Google or Github to verify who you are.
+Drone.io leverages login services provided by Google, Github or Bitbucket to verify who you are, and to help automate project setup.
 
-Drone.io never has access to your username or password.  Whenever you enter your username and password, you are doing it on Google's or Github's servers.
+Drone.io never has access to your password.  Whenever you enter your username and password, you are doing it on your provider's servers.
 
+<!--
 For this to work, when you first create an account Google or Github will ask you to authorize Drone.io to have access to basic account information.
 
 The very specific permissions and data Drone.io reqeusts are highlighted below.
@@ -72,8 +61,9 @@ Google
 </td>
 </tr>
 </table>
+-->
 
-To see more details about these permissions, and to modify or delete them, you'll need to go to Github's or Google's account management screen
+To see more details about the permissions granted to Drone.io, and to modify or delete them, you'll need to go to Github's, Google's, or Bitbucket's account management screen
 
 For Google:
 
@@ -89,5 +79,14 @@ For Github:
 1. Go to <github.com> and sign in
 2. Click on the "Account Settings" button, it's in the upper right
 3. Click on the Applications tab
-5. You will see a list of all sites you've ever authorized, and their permissions
-6. You should see Drone.io in the list.  You can view or modify it's permissions by following the instructions provided by Github on this screen
+4. You will see a list of all sites you've ever authorized, and their permissions
+5. You should see Drone.io in the list.  You can view or modify it's permissions by following the instructions provided by Github on this screen
+
+For Bitbucket:
+
+1. Go to <bitbucket.org> and sign in
+2. Click on your user in the upper right, then select "Manage Account"
+3. Click on "Integrated Applications"
+4. You will see a list of all sites you've ever authorized
+
+
