@@ -38,5 +38,5 @@ Once you copy this url into Github, click "Update Settings."
 
 From this point on any commits to your repository should trigger a build of your project on Drone.io.
 
-Note: It is reccomended to trigger a build manually before adding a automatic build hook.  Instructions for triggering manual builds are [here](/triggers.html#manual)
+Note: It is recommended to trigger a build manually before adding a automatic build hook.  Instructions for triggering manual builds are [here](/triggers.html#manual)
 

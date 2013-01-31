@@ -86,8 +86,8 @@ Congratulations! You just set up your first Drone.io project. A great place to g
 
 To automate your deployments, read [Deployments](/deployment.html) or jump to the the [Heroku](/heroku.html) or [Dotcloud](/dotcloud.html) guides.
 
-To archive your build arifacts, read [Archiving Files & Build Artifacts](/artifacts.html).
+To archive your build artifacts, read [Archiving Files & Build Artifacts](/artifacts.html).
 
 To configure notifications, read [Notifications](/notifications.html).
 
-The full list of guides is available here: [Documentaion](/..).
+The full list of guides is available here: [Documentation](/..).

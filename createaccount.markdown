@@ -37,7 +37,7 @@ Drone.io never has access to your password.  Whenever you enter your username an
 <!--
 For this to work, when you first create an account Google or Github will ask you to authorize Drone.io to have access to basic account information.
 
-The very specific permissions and data Drone.io reqeusts are highlighted below.
+The very specific permissions and data Drone.io requests are highlighted below.
 <table>
 <tr>
 <td>

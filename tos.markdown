@@ -150,7 +150,7 @@ Service.
 retribution) of any Drone.io customer, employee, member, or officer will result
 in immediate account termination.
 8. You understand that the technical processing and transmission of the Service,
-including your Content, may be transfered unencrypted and involve (a)
+including your Content, may be transferred unencrypted and involve (a)
 transmissions over various networks; and (b) changes to conform and adapt to
 technical requirements of connecting networks or devices.
 9. You must not upload, post, host, or transmit unsolicited email, SMSs, or

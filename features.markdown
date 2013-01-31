@@ -50,7 +50,7 @@ project locally (ie on your laptop).
 Build commands **are not** checked into your repository. This is an important
 difference between [Drone.io](https://drone.io) and other providers. If your build
 script requires sensitive information (ie amazon keys, database passwords) do
-you really want that checked into your repsoitory?
+you really want that checked into your repository?
 
 ## Continuous Deployments
 
