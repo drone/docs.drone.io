@@ -50,7 +50,7 @@ sudo start xvfb
 ```
 
 For an example project using DumpRenderTree, see the Dart team's
-[dart-web-components](https://github.com/dart-lang/dart-web-components) project.
+[web-ui](https://github.com/dart-lang/web-ui) project.
 
 ## Handling Dart Releases
 

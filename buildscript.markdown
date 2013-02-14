@@ -22,16 +22,6 @@ Add environment variables (optional), databases (optional), and enter your build
 Your project's working directory is `/home/ubuntu/src`. If you entered an optional
 checkout path, then the working directory is `/home/ubuntu/src/your/checkout/path`.
 
-## Post-Build
-
-### Notifications
-
-[Notification Guide](/notifications.html)
-
-### Archives
-
-[Artifacts Guide](/artifacts.html)
-
 ## Limits
 
 The following limits are placed upon all builds:

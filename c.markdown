@@ -1,8 +1,7 @@
 ---
 layout: default
-title: C
-icon: c
-tagline: Building C Projects
+title: C / C++ Projects
+tagline: Building C / C++ Projects
 ---
 
 The virtual machine is pre-installed with the following software:

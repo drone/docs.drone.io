@@ -1,0 +1,67 @@
+---
+layout: default
+title: Database Setup
+---
+This guide will help you configure databases and data-related services for
+your project. Every build is executed in its very own virtual machine that
+comes pre-installed with the following:
+
+* [MySQL](#mysql)
+* [PostgreSQL](#postgres)
+* [MongoDB](#mongodb)
+* [Memcache](#memcache)
+* [Redis](#redis)
+
+## <a name="mysql"></a> MySQL
+
+MySQL is configured to start automatically at address 127.0.0.1, port 3306,
+username root and blank password.
+
+Example command to create a database:
+
+```
+mysql -u root -e 'create database test;'
+```
+
+Example command to load a SQL file and generate your schema:
+
+```
+mysql -u root -D test < schema.sql
+```
+
+## <a name="postgres"></a> Postgres
+
+Postgres is configured to start automatically at address 127.0.0.1, port 5432,
+username postgres and no password.
+
+Example command to create a database:
+
+```
+psql -c 'create database test;' -U postgres
+```
+
+## <a name="mongodb"></a> MongoDB
+
+Mongodb must be started manually, as part of your build script. You can
+start Mongodb by executing the following command:
+
+```
+sudo start mongodb
+sleep 10
+```
+
+## <a name="redis"></a> Redis
+
+Redis must be started manually, as part of your build script. You can
+start Redis by executing the following command:
+
+```
+sudo start redis
+sleep 10
+```
+
+## <a name="memcache"></a> Memcache
+
+Memcahce is configured to start automatically at address 127.0.0.1 and
+port 11211 using default configurations.
+
