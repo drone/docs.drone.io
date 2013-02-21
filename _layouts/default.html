@@ -9,6 +9,10 @@
 		<link href="css/drone-base.css" rel="stylesheet" />
 		<link href="css/drone-docs.css" rel="stylesheet" />
 
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -21,10 +25,10 @@
 	<body>
 		<!-- Primary Navigation
 		================================================== -->
-		<div class="navbar">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="https://drone.io"></a>
+					<a class="brand" href="/">drone.io <small>Docs</small></a>
 					<ul class="nav pull-right">
 						<li><a href="http://blog.drone.io">Blog</a></li>
 						<li class="active"><a href="http://docs.drone.io">Documentation</a></li>
@@ -33,25 +37,24 @@
 			</div>
 		</div>
 
+		<div class="jumbotron masthead">
+			<!-- Article Title, details
+				 ================================================== -->
+			<div class="container">
+				{{ if .page.logo }}
+				<img src="{{ .page.logo }}" />
+				{{ else }}
+					{{ if .page.icon }}
+					<h1><span class="icon-prog-{{ .page.icon }}" style="font-size:40px;"></span> <span style="font-size:30px;">{{ .page.tagline }}</span></h1>
+					{{ else }}
+					<h1>{{ .page.title }}</h1>
+					{{ end }}
+				{{ end }}
+			</div>
+		</div>
+
 		<div class="container">
 			<div class="container-inner">
-				<!-- Project Details
-				================================================== -->
-				<header>
-					<hgroup>
-						{{ if .page.logo }}
-						<h1><img src="{{ .page.logo }}"/></h1>
-						{{ else }}
-							{{ if .page.icon }}
-							<h1><span class="icon-prog-{{ .page.icon }}" style="font-size:40px;"></span> <span style="font-size:30px;">{{ .page.tagline }}</span></h1>
-							{{ else }}
-								<h1>{{ .page.title }}</h1>
-							{{ end }}
-						{{ end }}
-					</hgroup>
-				</header>
-
-				<hr/>
 
 				<!-- Project Settings
 				================================================== -->
@@ -68,45 +71,46 @@
 					<div class="span3 pull-right">
 
 						<ul class="nav nav-pills nav-stacked">
+
+							<a href="/quickstart.html" class="btn" style="display:block;text-align: left;font-size: 18px;padding: 10px 10px 10px 10px;background: #40C598;color: #FFF;text-shadow: none;border: none;background-color: #57BCC8;">Quick Start »</a>
+							<a href="/quickstart.html" class="btn" style="display:block;text-align: left;font-size: 18px;padding: 10px 10px 10px 10px;background: #40C598;color: #FFF;text-shadow: none;border: none;background-color: rgba(189, 54, 47, 0.8);margin-top:10px;display:none;">Get Help »</a>
+
+
 							<li class="nav-header">Getting Started</li>
-							<li><a href="/quickstart.html">Quick Start Guide</a></li>
-							<li><a href="/createaccount.html">Create Account</a></li>
-							<li><a href="/newproject.html">Project & Repo Setup</a></li>
+							<li><a href="/newproject.html">Project Setup</a></li>
+<!--
+							<li><a href="/project-private.html">Private Projects</a></li>
+-->
+							<li><a href="/teams.html">Teams</a></li>
 							
 							<li class="nav-header">Builds</li>
-							<li><a href="/buildscript.html">Build Setup</a></li>
+							<li><a href="/buildscript.html">Build Commands</a></li>
 							<li><a href="/databases.html">Database Setup</a></li>
+<!--
+							<li><a href="/browsers.html">Browser Testing</a></li>
+-->
 							<li><a href="/notifications.html">Notifications</a></li>
 							<li><a href="/artifacts.html">Artifacts</a></li>
-							<li><a href="/triggers.html">Triggering Builds</a></li>
+							<li><a href="/branches.html">Branches</a></li>
 							<li><a href="/badges.html">Status Badges</a></li>
 
 							<li class="nav-header">Languages</li>
 							<li><a href="/cpp.html">C / C++</a></li>
 							<li><a href="/dart.html">Dart</a></li>
 							<li><a href="/golang.html">Go</a></li>
+							<li><a href="/groovy.html">Groovy (New)</a></li>
 							<li><a href="/java.html">Java</a></li>
 							<li><a href="/node.html">Node.js</a></li>
 							<li><a href="/php.html">PHP (Beta)</a></li>
 							<li><a href="/python.html">Python (Beta)</a></li>
 							<li><a href="/ruby.html">Ruby (Beta)</a></li>
 							<li style="display:none;"><a href="/rust.html">Rust (Beta)</a></li>
-							<li><a href="/scala.html">Scala (Beta)</a></li>
+							<li><a href="/scala.html">Scala (New)</a></li>
 						
 							<li class="nav-header">Deployments</li>
 							<li><a href="/heroku.html">Heroku</a></li>
 							<li><a href="/dotcloud.html">Dotcloud</a></li>
-							
-							<li class="nav-header">Repository Setup</li>
-							<li><a href="/github.html">Github</a></li>
-							<li><a href="/bitbucket.html">Bitbucket</a></li>
-<!--	
-							<li class="nav-header">Addons</li>
-							<li><a href="#">MySQL</a></li>
-							<li><a href="#">PostgreSQL</a></li>
-							<li><a href="#">Redis</a></li>
-							<li><a href="#">Memcache</a></li>
--->
+
 						</ul>
 					</div><!-- end .span3-->
 				</div><!-- end .container-fluid -->
@@ -116,15 +120,6 @@
 		<!-- Footer
 		================================================== -->
 		<footer>
-			<ul>
-				<li><a href="https://drone.io/pricing">Plans and Pricing</a></li>
-			<!--	<li><a href="https://drone.io/features">Features</a></li> -->
-				<li><a href="http://blog.drone.io">Blog</a></li>
-				<li><a href="http://docs.drone.io/contact.html">Contact</a></li>
-				<li><a href="http://docs.drone.io">Documentation</a></li>
-				<li><a href="http://docs.drone.io/privacy.html">Privacy Policy</a></li>
-				<li><a href="http://docs.drone.io/tos.html">Terms of Service</a></li>
-			</ul>
 			<p class="copyright">&copy; 2013 <strong>Drone.io</strong> All Rights Reserved.</p>
 		</footer>
 

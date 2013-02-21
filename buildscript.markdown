@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuring a Build Script
+title: Build Commands
 ---
 
 ## Select Language

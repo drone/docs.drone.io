@@ -1,7 +1,7 @@
 ---
-title: Dotcloud
+title: Dotcloud Deployments
 layout: default
-logo: "img/dotcloud.png"
+xlogo: "img/dotcloud.png"
 ---
 
 This document covers Continuous Deployment to Dotcloud using [drone.io](http://drone.io)

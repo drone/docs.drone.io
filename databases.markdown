@@ -2,7 +2,7 @@
 layout: default
 title: Database Setup
 ---
-This guide will help you configure databases and data-related services for
+This guide will help you setup databases and data-related services for
 your project. Every build is executed in its very own virtual machine that
 comes pre-installed with the following:
 

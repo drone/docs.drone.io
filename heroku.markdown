@@ -1,7 +1,7 @@
 ---
-title: Heroku
+title: Heroku Deployments
 layout: default
-logo: "img/heroku.png"
+xlogo: "img/heroku-logo-light-300x100.png"
 ---
 
 This document covers Continuous Deployment to Heroku using [drone.io](http://drone.io)
@@ -17,14 +17,11 @@ This document assumes:
 You will need to register your project's deployment key with Heroku. This will
 enable the build server to connect to Heroku and deploy your application.
 
-Your project's deploy key can be found by navigating to your **project** > **settings** > **keys**
-
-Copy the key to your computer (we'll name the file `hello-world.key`), and then
-execute the `heroku keys:add` command:
+Download your SSH key from the Heroku page, then execute the `heroku keys:add` command:
 
 ```sh
-$ heroku keys:add hello-world.key
-Uploading SSH public key hello-world.key... done
+$ heroku keys:add my-project-key.key
+Uploading SSH public key my-project-key.key... done
 ```
 
 ## Deployment Setup
