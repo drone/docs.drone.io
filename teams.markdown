@@ -4,7 +4,7 @@ title: Team Settings
 ---
 **Drone** supports Github and Bitbucket organizations
 out of the box. There is no extra setup. There are no additional fees. When
-creating a new project you will see a list of all your repositories, individual
+creating a new project you will see a list of all your repositories, both individual
 and organization.
 
 ## Team Billing

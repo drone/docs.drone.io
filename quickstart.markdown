@@ -27,7 +27,7 @@ Select your repository from the list:
 Select the main programming language for your project:
 ![Lang](img/screenshot_repo_setup_lang.png)
 
-The last step is to double check the build commands.  You will see a list of common build and test commands based on the language you choose.  If they look correct for your project, hit "Save" and your done.  
+The last step is to double check the build commands.  You will see a list of common build and test commands based on the language you choose.  If they look correct for your project, hit "Save" and you're done.  
 ![Script](img/screenshot_repo_setup_cmds.png)
 
 These build commands can be anything you enter on the command line.  Once you are done making changes, hit "Save."
