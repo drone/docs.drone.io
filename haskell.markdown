@@ -25,6 +25,9 @@ You can execute the following cabal commands to build and test your code:
 cabal configure --enable-tests && cabal build && cabal test
 ```
 
+Please note: your build commands are fully customizable. If you prefer, you can
+always invoke a Makefile or shell script to build and test your code.
+
 --------------------------------------------------------------------------------
 
 ## Examples
