@@ -5,12 +5,13 @@ icon: ruby
 tagline: Building Ruby Projects
 ---
 
-The following Node.js versions are available to your build:
+The following Ruby versions are available to your build:
 
-* Ruby 1.8.7
-* Node 1.9.3
+* Ruby 1.8.7-p370 
+* Ruby 1.9.3-p385
+* Ruby 2.0.0-p0
 
-Please note that Ruby versions are managed using [RVM](https://rvm.io/).
+Please note that Ruby versions are managed using [rbenv](https://github.com/sstephenson/rbenv/).
 
 ### Dependencies
 
