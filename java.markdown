@@ -17,6 +17,14 @@ The following Java build tools are pre-installed:
 * Maven
 * Ant
 
+## Gradle
+
+If you are using Gradle as your build tool, we recommend using gradle wrapper
+by including the gradlew script in your repository and invoking as part
+of your build script. Learn more about gradlew here:
+[http://www.gradle.org/docs/current/userguide/gradle_wrapper.html](http://www.gradle.org/docs/current/userguide/gradle_wrapper.html)
+
+
 --------------------------------------------------------------------------------
 
 ## Examples
