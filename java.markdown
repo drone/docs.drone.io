@@ -9,6 +9,7 @@ The following Java versions are available to your build:
 
  * OpenJDK 6
  * OpenJDK 7
+ * Sun JDK 8
 
 ## Build Tools
 

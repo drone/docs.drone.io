@@ -44,3 +44,16 @@ make test
 
 You may need to change the default build configuration based on your project's
 build lifecycle.
+
+
+### C++ 11
+
+If you need C++ 11 features you'll need to switch to GCC 4.8 using the
+update-alternatives command:
+
+```
+echo 2 | sudo update-alternatives --config gcc
+```
+
+Both GCC 4.6 (default) and GCC 4.8 are installed on every virtual machine. The
+above command will switch the default version of GCC to 4.8.
