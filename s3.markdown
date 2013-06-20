@@ -102,7 +102,7 @@ During its Beta period, the following limitations will be placed
 on S3 uploads:
 
 * 1000 file max upload
-* 10mb max file size
+* 100MB max file size
 
 
 
