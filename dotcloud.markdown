@@ -1,7 +1,7 @@
 ---
-title: Dotcloud
+title: Dotcloud Deployments
 layout: default
-logo: "img/dotcloud.png"
+xlogo: "img/dotcloud.png"
 ---
 
 This document covers Continuous Deployment to Dotcloud using [drone.io](http://drone.io)
@@ -9,14 +9,14 @@ This document covers Continuous Deployment to Dotcloud using [drone.io](http://d
 This document assumes:
 
 * You are registered for a Dotcloud account
-* You installed the [Dotcloud CLI](http://docs.dotcloud.com/0.4/firststeps/install/) on your computer
+* You installed the [Dotcloud CLI](http://docs.dotcloud.com/0.9/firststeps/install/) on your computer
 * You have created an application using `dotcloud create`
 * Your project has a `dotcloud.yml` file checked-in to the repository
 
 ## Dotcloud Key
 
 First you need your dotcloud key. Login to your dotcloud account and go to the
-[settings](https://www.dotcloud.com/settings/) screen.
+[settings](https://account.dotcloud.com/settings) screen.
 
 ![Dotcloud API Key](img/dotcloud-key.png)
 

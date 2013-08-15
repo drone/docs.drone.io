@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuring a Build Script
+title: Build Commands
 ---
 
 ## Select Language
@@ -22,21 +22,11 @@ Add environment variables (optional), databases (optional), and enter your build
 Your project's working directory is `/home/ubuntu/src`. If you entered an optional
 checkout path, then the working directory is `/home/ubuntu/src/your/checkout/path`.
 
-## Post-Build
-
-### Notifications
-
-[Notification Guide](/notifications.html)
-
-### Archives
-
-[Artifacts Guide](/artifacts.html)
-
 ## Limits
 
 The following limits are placed upon all builds:
 
-* a build cannot exceed 15 minutes
+* a build cannot exceed 15 minutes (free tier only)
 * a build cannot notify > 5 email recipients
 * a build cannot archive > 5 files
 * archived files cannot exceed 10 MB

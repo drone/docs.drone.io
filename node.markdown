@@ -9,6 +9,7 @@ The following Node.js versions are available to your build:
 
 * Node 0.6
 * Node 0.8
+* Node 0.10
 
 ### Dependencies
 

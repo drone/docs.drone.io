@@ -1,0 +1,109 @@
+---
+title: S3 Deployments (Beta)
+layout: default
+---
+
+This document covers archiving / deploying files Amazon's Simple Storage
+Service (S3). Here is the configuration screen for S3:
+![S3 Setup](img/screenshot_deployments_s3.png)
+
+## Amazon Key and Secret
+
+You'll need to provide the AWS Access Key and Secret Access Key in order
+for Drone to authenticate and upload files to your S3 bucket.
+
+## Bucket
+
+The name of your S3 bucket.
+
+## Region
+
+Choose the region where your bucket is located:
+
+* us-east-1
+* us-west-1
+* us-west-2
+* eu-west-1
+* ap-southeast-1
+* ap-southeast-2
+* ap-northeast-1
+* sa-east-1
+
+## Access
+
+You an choose the access level for the files being uploaded:
+
+* private
+* public-read
+* public-read-write
+* authenticated-read
+* bucket-owner-read
+* bucket-owner-full-control
+
+Learn more about S3 access control
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/ACLOverview.html#CannedACL](here).
+
+## Source
+
+Specify which files are getting uploaded to S3. The Source path is relative to
+the root of your repository. See some common examples below:
+
+Upload your entire repository:
+
+```
+/*
+```
+
+Upload the contents of a folder:
+
+```
+/folder/*
+```
+
+Upload the contents of a folder, including all subdirectories:
+
+```
+/folder/**
+```
+
+Upload a single file:
+
+```
+/path/to/file.txt
+```
+
+Upload files matching a pattern:
+
+```
+/folder/*/*.zip
+```
+
+## Target
+
+Specify the base directory where the files should be uploaded. For example,
+if you archive file `bar.txt` and specify the target directory `foo`, your
+file will get uploaded to `/foo/bar.txt` in s3.
+
+It is important to note that you source directory structure will not be preserved
+when uploading to s3. For example, if you archive `/folder/file.txt` it will
+be uploaded to `/file.txt` in s3 (with `/folder/` stripped from the path). In
+order to preserve the source directory structure, you would set your target
+to `/folder`.
+
+## Branch <small>Optional</small>
+
+If the Branch filter is empty, Drone will execute your deployment for all
+branches. If you only want certain branches to automatically deploy, you can
+specify them in this field as a comma-separated list.
+
+## Limitations
+
+During its Beta period, the following limitations will be placed
+on S3 uploads:
+
+* 1000 file max upload
+* 100MB max file size
+
+
+
+

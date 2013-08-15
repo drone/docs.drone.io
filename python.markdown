@@ -9,6 +9,7 @@ The following Python versions are available to your build:
 
  * Python 2.7
  * Python 3.2
+ * Python 3.3
 
 Please note that Python builds are executed inside a virtualenv instance.
 
