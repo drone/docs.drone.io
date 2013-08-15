@@ -5,7 +5,7 @@ title: Branches
 
 When you setup your Github or Bitbucket repository, Drone
 will automatically configure a post-commit hook. This allows Github and
-Bitbucket to automatically tirgger a build every time you commit code.
+Bitbucket to automatically trigger a build every time you commit code.
 
 When Github and Bitbucket trigger builds, they provide metadata about your
 commit, including the *branch*. Drone will always execute your build for
